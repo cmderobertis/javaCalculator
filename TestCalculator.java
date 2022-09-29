@@ -7,7 +7,8 @@ public class TestCalculator {
         String response;
         do {
             c.performOperation();
-            System.out.println("Result: " + c.getResult());
+            DecimalFormat df = new DecimalFormat("#");
+            System.out.println("Result: " + df.format(c.getResult()));
             System.out.println("Thanks for calculating! Again? [y/n]");
             response = System.console().readLine();
         } while (Objects.equals(response, "y"));

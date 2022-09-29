@@ -64,8 +64,8 @@ public class Calculator {
         System.out.println("Enter number");
         String input = s.nextLine();
         boolean numberRequired = true;
+        String helpForUser = "operator [+-*/] or equals sign [=]";
         while (!Objects.equals(input, "=")) {
-            String helpForUser = "operator [+-*/] or equals sign [=]";
             // checks to see if input is valid
             try {
                 double num = Double.parseDouble(input);
